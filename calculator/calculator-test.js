@@ -10,5 +10,3 @@ describe("Calculate Monthly Payment", function () {
 		expect(calculateMonthlyPayment(values).toString()).toMatch(/^\d+\.\d\d$/);
 	});
 });
-
-/// etc
