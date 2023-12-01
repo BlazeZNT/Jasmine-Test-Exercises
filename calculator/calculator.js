@@ -35,10 +35,7 @@ function setupIntialValues() {
 // Update the monthly payment
 function update() {
 	let currentValues = getCurrentUIValues();
-	console.log(currentValues);
 	let newVal = calculateMonthlyPayment(currentValues);
-	console.log(calculateMonthlyPayment(currentValues));
-	console.log(typeof calculateMonthlyPayment(currentValues));
 	updateMonthly(newVal);
 }
 
