@@ -34,11 +34,12 @@ describe("Servers test for Payments", function () {
 		// teardown logic
 		billAmtInput.value = "";
 		tipAmtInput.value = "";
+		paymentTbody.innerHTML = "";
 		allPayments = {};
 		paymentId = 0;
-		paymentTbody.innerHTML = "";
 		summaryTds[0].innerHTML = "";
-		summaryTds[0].innerHTML = "";
-		summaryTds[0].innerHTML = "";
+		summaryTds[1].innerHTML = "";
+		summaryTds[2].innerHTML = "";
+		serverTbody.innerHTML = "";
 	});
 });
