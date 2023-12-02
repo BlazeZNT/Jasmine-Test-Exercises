@@ -55,7 +55,7 @@ function appendPaymentTable(curPayment) {
 	appendTd(newTr, "$" + curPayment.billAmt);
 	appendTd(newTr, "$" + curPayment.tipAmt);
 	appendTd(newTr, curPayment.tipPercent + "%");
-	// appendPaymentTable(newTr);
+	appendPaymentDeleteBtn(newTr);
 
 	paymentTbody.append(newTr);
 }
