@@ -58,7 +58,6 @@ function appendPaymentDeleteBtn(tr) {
 		event.target.parentElement.remove();
 		delete allPayments[newtr.id];
 		updateSummary();
-		console.log(newtr);
 	});
 	tr.append(newTd);
 }
