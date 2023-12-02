@@ -22,3 +22,43 @@ function appendTd(tr, value) {
 
 	tr.append(newTd);
 }
+
+function appendServerDeleteBtn(tr) {
+	let newTd = document.createElement("td");
+	newTd.className = "delBtn";
+	newTd.innerText = "X";
+	newTd.addEventListener("click", function (event) {
+		let newtar = event.target.closest("tr");
+		delete allServers[newtar.id];
+		event.target.parentElement.remove();
+		updateServerTable();
+	});
+	tr.append(newTd);
+}
+
+function appendServerDeleteBtn(tr) {
+	let newTd = document.createElement("td");
+	newTd.className = "delBtn";
+	newTd.innerText = "X";
+	newTd.addEventListener("click", function (event) {
+		let newtar = event.target.closest("tr");
+		delete allServers[newtar.id];
+		event.target.parentElement.remove();
+		updateServerTable();
+	});
+	tr.append(newTd);
+}
+
+// function appendPaymentDeleteBtn(tr) {
+// 	let newTd = document.createElement("td");
+// 	newTd.className = "delSerBtn";
+// 	newTd.innerText = "X";
+// 	newTd.addEventListener("click", function (event) {
+// 		let newtar = event.target.closest("tr");
+// 		paymentId -= 1;
+// 		delete allPayments[newtar.id];
+// 		event.target.parentElement.remove();
+// 		;
+// 	});
+// 	tr.append(newTd);
+// }
